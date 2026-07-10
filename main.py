@@ -56,4 +56,4 @@ for result in results:
     img.show()
     
 # print([r.payload['path'] for r in results])  
-#are both the same thing?
+#are both the same thing? 
