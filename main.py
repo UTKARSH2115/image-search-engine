@@ -26,7 +26,7 @@ if not os.path.exists('image-store'):
     
     client.recreate_collection(
         collection_name='images',
-        vectors_config=VectorParams(size=len(embeddings[0])),
+        vectors_config=VectorParams(size=len(embeddings[0]),distance = Distance.COSINE),
         Distance=Distance.COSINE
     )
     
